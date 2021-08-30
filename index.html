@@ -70,7 +70,7 @@
 		
 		map.createPane('pane_OpenStreetMap_0');
 		map.getPane('pane_OpenStreetMap_0').style.zIndex = 400;
-		var layer_OpenStreetMap_0 = L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		var layer_OpenStreetMap_0 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             pane: 'pane_OpenStreetMap_0',
             opacity: 1.0,
             attribution: '<a href="https://www.openstreetmap.org/">© OpenStreetMap contributors</a>',
@@ -79,7 +79,7 @@
             minNativeZoom: 0,
             maxNativeZoom: 18
 		})
-		layer_Google_sat  = L.tileLayer('http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}', {
+		layer_Google_sat  = L.tileLayer('https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}', {
 			minZoom: 5,
 			maxZoom: 28,
 			attribution: '<a href="https://www.google.com/maps">© Google</a>'
